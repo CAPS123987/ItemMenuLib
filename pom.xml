@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>CAPS123987</groupId>
   <artifactId>ItemMenuLib</artifactId>
-  <version>1.0</version>
+  <version>1.3.0</version>
   <name>ItemMenuLib</name>
   
   <properties>
@@ -27,4 +27,20 @@
            <scope>provided</scope>
     	</dependency>
     </dependencies>
+
+  <build>
+        <finalName>${project.name} v${project.version}</finalName>
+        <defaultGoal>clean package</defaultGoal>
+        <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
+
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>*</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
 </project>
