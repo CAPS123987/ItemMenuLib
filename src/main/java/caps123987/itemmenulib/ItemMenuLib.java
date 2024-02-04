@@ -15,8 +15,6 @@ public final class ItemMenuLib extends JavaPlugin {
         itemRegistry = new ItemRegistry();
 
         getServer().getPluginManager().registerEvents(itemRegistry, this);
-
-        getCommand("openmenu").setExecutor(new comm());
     }
 
     @Override

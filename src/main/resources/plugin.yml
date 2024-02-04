@@ -2,8 +2,3 @@ name: ItemMenuLib
 version: '${version}'
 main: caps123987.itemmenulib.ItemMenuLib
 api-version: '1.20'
-
-commands:
-  openmenu:
-    description: controls this plugin
-    usage: /<command>
