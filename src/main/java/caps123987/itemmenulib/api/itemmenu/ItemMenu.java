@@ -46,7 +46,9 @@ public class ItemMenu {
         clickHandlers.put(slot, handler);
     }
 
-
+    public void removeItemClickHandler(int slot){
+        clickHandlers.remove(slot);
+    }
     public void onAnyClick(Consumer<InventoryClickEvent> consumer){
         anyClickConsumer = consumer;
     }
