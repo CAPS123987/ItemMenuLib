@@ -21,6 +21,7 @@ public class ItemMenu {
 
     public void open(Player p){
         itemRegistry.addMenuBuffer(p.getUniqueId(), this);
+
     }
-    
+
 }
