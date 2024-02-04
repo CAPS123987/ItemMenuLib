@@ -117,3 +117,7 @@ run/
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+*.yml
+target/maven-archiver/pom.properties
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
