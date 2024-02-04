@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 public class comm implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        ItemMenu menu = new ItemMenu(27);
+        ItemMenu menu = new ItemMenu(27,"Menu");
 
         menu.getInventory().setItem(13, new ItemStack(Material.DIAMOND));
 

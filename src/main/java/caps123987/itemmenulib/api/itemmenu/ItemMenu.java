@@ -16,8 +16,8 @@ public class ItemMenu {
     Consumer<InventoryClickEvent> anyClickConsumer;
     HashMap<Integer, ItemClickHandler> clickHandlers = new HashMap<>();
 
-    public ItemMenu(int size) {
-        this.inventory = Bukkit.createInventory(null, size, "");
+    public ItemMenu(int size, String title) {
+        this.inventory = Bukkit.createInventory(null, size, title);
         itemRegistry = ItemMenuLib.getInstance().getMenuRegistry();
     }
 
