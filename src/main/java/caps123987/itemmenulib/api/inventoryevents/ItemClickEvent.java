@@ -1,13 +1,8 @@
 package caps123987.itemmenulib.api.inventoryevents;
 
 import caps123987.itemmenulib.api.itemmenu.ItemMenu;
-import org.bukkit.event.inventory.ClickType;
-import org.bukkit.event.inventory.InventoryAction;
 import org.bukkit.event.inventory.InventoryClickEvent;
-import org.bukkit.event.inventory.InventoryType;
-import org.bukkit.inventory.InventoryView;
-import org.bukkit.inventory.ItemStack;
-import org.jetbrains.annotations.NotNull;
+
 
 public class ItemClickEvent extends InventoryClickEvent {
 
