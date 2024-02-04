@@ -12,7 +12,6 @@ public final class ItemMenuLib extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-
         itemRegistry = new ItemRegistry();
 
         getServer().getPluginManager().registerEvents(itemRegistry, this);
