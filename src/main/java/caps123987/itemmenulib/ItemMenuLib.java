@@ -1,6 +1,6 @@
 package caps123987.itemmenulib;
 
-import caps123987.itemmenulib.registry.ItemRegistry;
+import caps123987.itemmenulib.api.registry.ItemRegistry;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ItemMenuLib extends JavaPlugin {
@@ -16,6 +16,8 @@ public final class ItemMenuLib extends JavaPlugin {
         itemRegistry = new ItemRegistry();
 
         getServer().getPluginManager().registerEvents(itemRegistry, this);
+
+        getCommand("openmenu").setExecutor(new comm());
     }
 
     @Override

@@ -1,6 +1,7 @@
-package caps123987.itemmenulib.registry;
+package caps123987.itemmenulib.api.registry;
 
-import caps123987.itemmenulib.itemmenu.ItemMenu;
+import caps123987.itemmenulib.api.itemmenu.ItemMenu;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -34,6 +35,14 @@ public class ItemRegistry implements Listener {
                 itemMenus.put(p.getUniqueId(), buffer.get(p.getUniqueId()));
                 buffer.remove(p.getUniqueId());
             }
+        }
+    }
+
+    @EventHandler
+    public void onInventoryClick(InventoryClickEvent e) {
+        ItemMenu itemMenu = itemMenus.get(e.getWhoClicked().getUniqueId());
+        if(itemMenu != null){
+            itemMenu.onClick(e);
         }
     }
 }
