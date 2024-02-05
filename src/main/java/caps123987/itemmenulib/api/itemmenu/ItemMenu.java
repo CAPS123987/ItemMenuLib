@@ -31,7 +31,7 @@ public class ItemMenu {
     }
 
     public void onClick(InventoryClickEvent e) {
-        ItemClickHandler handler = clickHandlers.get(e.getSlot());
+        ItemClickHandler handler = clickHandlers.get(e.getRawSlot());
 
         if(handler != null){
             handler.onClick(e);
